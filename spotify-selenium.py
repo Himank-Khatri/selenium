@@ -7,7 +7,7 @@ import time
 webbrowser.get('windows-default')
 
 option = webdriver.ChromeOptions()
-option.binary_location = r'C:\Program Files (x86)\BraveSoftware\Brave-Browser\Application\brave.exe'
+option.binary_location = r'' # browser path
 option.add_argument("start-maximized")
 
 song = input('What song would you like to listen? ')
@@ -16,7 +16,7 @@ search_url = 'https://open.spotify.com/search/' + index_url
 
 print('\nSearching for the song...')
 
-driver = webdriver.Chrome(executable_path=r'E:\Games\FILES\chromedriver_brave.exe', options=option) 
+driver = webdriver.Chrome(executable_path=r'', options=option) # driver path
 
 driver.get(search_url)
 driver.implicitly_wait(5)
